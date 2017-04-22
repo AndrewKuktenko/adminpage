@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatiable" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin page</title>
+  
+<link rel="stylesheet" href="font/weathericons-regular-webfont.eot">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.svg">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.ttf">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.woff">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.woff2">
+
+    <link rel="stylesheet" href="font/fontawesome-webfont.eot">
+    <link rel="stylesheet" href="font/fontawesome-webfont.svg">
+    <link rel="stylesheet" href="font/fontawesome-webfont.ttf">
+    <link rel="stylesheet" href="font/fontawesome-webfont.woff">
+    <link rel="stylesheet" href="font/fontawesome-webfont.woff2">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/weather-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- TEST -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+  	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    
+
+
+	<!-- Latest compiled and minified JavaScript -->
+
+	<script src="/js/jquery.js"></script>
+
+	<script src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log("ok");
+		})
+	</script>
+
+	
+
+</head>
+<body class="nav-md">
+	<div class="container body">
+		<header class="top_nav">
+			<div class="nav_menu">
+				<nav>
+				<ul class="nav navbar-nav navbar-right">
+					<li class>
+						<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    	<img src="images/img.jpg" alt="">Adolf Hitler 
+                    	<span class=" fa fa-angle-down"></span>
+                    	</a>
+                    	<ul class="dropdown-menu dropdown-usermenu pull-right">
+                    		<li><a href="javascript:;">Profile</a></li>
+                    		<li>
+                    			<a href="javascript:;">
+                    				<span class="badge bg-red pull-right">50%</span>
+                    				<span>Settings</span>
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="javascript:;">
+                    				Help
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="javascript:;">
+                    				<i class="fa fa-sign-out pull-right"></i>
+                    				Log Out
+                    			</a>
+
+                    		</li>
+                    	</ul>
+                  		
+					</li>
+					<li role="presentation" class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    	<i class="fa fa-envelope-o"></i>
+                    	<span class="badge bg-green">6</span>
+                  		</a>
+                  		<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+					</li>
+				</ul>
+				</nav>
+			</div>		
+		</header>
+		<main class="main_container">
+			<div class="left-side">
+				<div>
+									<div class="main_menu_side hidden-print main_menu">
+             	 <div class="menu_section">
+               
+                    <ul class="nav side-menu" style="">
+                    <li> <a href="index.html" class="main"> Home</a></li>
+                      <li><a href="index.html" class="main-menu"> Temperature </a>
+                      </li><li><a href="index.html" class="main-menu"> Humidity</a>
+                      </li><li><a href="index.html" class="main-menu"> CO2 </a>
+                      </li><li><a href="index.html" class="main-menu"> Pressure </a>
+                    </li>
+                    </ul> 
+              </div>
+                       
+            </div>
+			</div>
+			</div>
+			<div class="right-side" role="main">
+				<div class="center_menu">
+					<div class="row top_tiles">
+						<div>
+							<div class="block_top col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    			<span class="temp">21</span>
+                    			<li class="wi wi-celsius"></li>
+                    			<i class="wi wi-thermometer"></i>
+                    			<h3>Temperature</h3>
+               				</div>
+               				<div class="block_top col-lg-3 col-md-3 col-sm-6 col-xs-12">
+               					<span class="humid">56</span>
+               					<i class="wi wi-humidity"></i>
+                    			<h3>Humidity</h3>
+               				</div>
+               				<div class="block_top col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    			<span id="ppm">400</span>
+                    			<sup class="ppm">PPM</sup>
+                    			<i class="wi wi-barometer"></i><h3>
+                    			CO<sub>2</sub></div>
+               				<div class="block_top col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                    			<span id="millibars">1000</span>
+                    			<sub class="millibars">(Mil)</sub>
+                    			<i class="wi wi-small-craft-advisory"></i>
+                    			<h2>Pressure</h2>
+               				</div>
+               				<div class="but_menu">
+           
+                    			<button type="button" class="btn btn-success btn-lg">Hive 1</button>
+                    			<button type="button" class="btn btn-success btn-lg">Hive 2</button>
+                    			<button type="button" class="btn btn-success btn-lg">Hive 3</button>
+                    			<button type="button" class="btn btn-success btn-lg">Hive 4</button>
+                    			<button type="button" class="btn btn-success btn-lg">Hive 5</button>
+              				</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="x_panel">
+								<div class="x_title">
+										<h2>Hive Status</h2>
+										<div class="filter">
+											<div class="filter">
+                      							<div id="reportrange" class="pull-right">
+                        							<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                        							<span>December 30, 2016 - April 01, 2017</span> <b class="caret"></b>
+                      							</div>
+                    						</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								<div class="x_content">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="demo-container">
+											
+										</div>		
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+		<!-- <footer>
+			<div class="footer-patern">
+				<div class="bottom-menu">
+					
+				</div>
+			</div>
+		</footer> -->
+	</div>
+	
+</body>
+</html>
