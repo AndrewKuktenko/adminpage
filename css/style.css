@@ -576,12 +576,6 @@ a
     font-size: 15px;
 }
 
-.nav_menu .dropdown
-{
-    padding-left: 134px;
-    float: right;
-}
-
 .bg-green 
 {
     background: #1ABB9C !important;
@@ -889,4 +883,10 @@ ul.msg_list li:last-child
 .button-block .col-md-2
 {
     text-align: center;
+}
+
+.nav_menu .dropdown
+{
+    padding-left: 134px;
+    float: right;
 }
